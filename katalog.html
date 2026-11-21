@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katalog Produk | Hegar Ramona</title>
+
+    <link rel="stylesheet" href="css/rendi_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="rendi_header">
+        <div class="rendi_container rendi_navbar">
+
+            <a href="index.html" class="rendi_logo">
+                HEGAR<span> RAMONA.</span>
+            </a>
+
+            <nav class="rendi_menu">
+                <a href="index.html">Beranda</a>
+                <a href="katalog.html" class="rendi_active">Katalog</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="promo.html">Promo &amp; Paket</a>
+                <a href="pemesanan.html">Cara Pemesanan</a>
+                <a href="testimoni.html">Testimoni</a>
+                <a href="kontak.html">Hubungi Kami</a>
+            </nav>
+
+            <a href="katalog.html" class="rendi_nav_button">
+                Lihat Katalog ↗
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO KATALOG -->
+    <main>
+
+        <section class="rendi_catalog_hero">
+            <div class="rendi_container">
+
+                <div class="rendi_catalog_heading">
+
+                    <span class="rendi_eyebrow">
+                        KOLEKSI PRODUK HEGAR RAMONA
+                    </span>
+
+                    <h1>
+                        Temukan Camilan,
+                        <span>Favoritmu.</span>
+                    </h1>
+
+                    <p>
+                        Beragam pilihan camilan, kue, dan aneka makanan
+                        untuk menemani waktu santai maupun momen
+                        istimewa bersama orang tersayang.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DAFTAR PRODUK -->
+        <section class="rendi_catalog_section">
+            <div class="rendi_container">
+
+                <div class="rendi_catalog_top">
+
+                    <div>
+                        <span class="rendi_eyebrow">
+                            PILIHAN UNTUKMU
+                        </span>
+
+                        <h2>Jelajahi Produk Kami.</h2>
+                    </div>
+
+                    <p class="rendi_catalog_note">
+                        Pilih produk yang kamu inginkan, tambahkan ke keranjang, lalu lanjutkan pemesanan saat semua pilihanmu sudah lengkap.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTER KATEGORI -->
+                <div class="rendi_catalog_filter">
+
+                    <button class="rendi_filter_button rendi_filter_active"
+                        data-kategori="semua">
+                        Semua
+                    </button>
+
+                    <button class="rendi_filter_button"
+                        data-kategori="kiloan">
+                        Camilan Kiloan
+                    </button>
+
+                    <button class="rendi_filter_button"
+                        data-kategori="toples">
+                        Kemasan Toples
+                    </button>
+
+                    <button class="rendi_filter_button"
+                        data-kategori="bolu">
+                        Aneka Bolu
+                    </button>
+
+                    <button class="rendi_filter_button"
+                        data-kategori="bungkus">
+                        Kemasan Bungkus
+                    </button>
+
+                </div>
+
+
+                <!-- PENCARIAN DAN PENGURUTAN -->
+                <div class="rendi_catalog_tools">
+
+                    <input
+                        type="text"
+                        id="rendi_search_product"
+                        placeholder="Cari nama produk..."
+                    >
+                    <select id="rendi_sort_product" aria-label="Urutkan produk">
+                        <option value="default">Urutkan Produk</option>
+                        <option value="nama">Nama A-Z</option>
+                        <option value="nama-desc">Nama Z-A</option>
+                        <option value="harga-asc">Harga Terendah</option>
+                        <option value="harga-desc">Harga Tertinggi</option>
+                    </select>
+
+                </div>
+
+
+                <!-- GRID PRODUK -->
+                <div class="rendi_catalog_result" id="rendi_catalog_result" aria-live="polite">
+                    Menampilkan produk...
+                </div>
+
+                <div class="rendi_product_grid" id="rendi_product_grid">
+                    <!-- Data produk ditampilkan melalui JavaScript -->
+                </div>
+
+                <div class="rendi_empty_product" id="rendi_empty_product">
+                    <strong>Produk tidak ditemukan.</strong>
+                    <p>Coba gunakan kata kunci lain atau pilih kategori yang berbeda.</p>
+                </div>
+
+                <!-- KERANJANG BELANJA -->
+                <button type="button" class="rendi_cart_float" id="rendi_cart_float" aria-label="Buka keranjang">
+                    <span class="rendi_cart_icon">🛒</span>
+                    <span>Keranjang</span>
+                    <strong id="rendi_cart_count">0</strong>
+                </button>
+
+                <div class="rendi_cart_drawer" id="rendi_cart_drawer" aria-hidden="true">
+                    <div class="rendi_cart_overlay" data-close-cart></div>
+                    <aside class="rendi_cart_panel" role="dialog" aria-modal="true" aria-labelledby="rendi_cart_title">
+                        <div class="rendi_cart_panel_header">
+                            <div>
+                                <span class="rendi_eyebrow">PESANANMU</span>
+                                <h2 id="rendi_cart_title">Keranjang</h2>
+                            </div>
+                            <button type="button" class="rendi_cart_close" id="rendi_cart_close" aria-label="Tutup keranjang">&times;</button>
+                        </div>
+
+                        <div class="rendi_cart_items" id="rendi_cart_items"></div>
+
+                        <div class="rendi_cart_empty" id="rendi_cart_empty">
+                            <strong>Keranjang masih kosong.</strong>
+                            <p>Pilih produk yang kamu inginkan, lalu tambahkan ke keranjang.</p>
+                        </div>
+
+                        <div class="rendi_cart_footer" id="rendi_cart_footer">
+                            <div class="rendi_cart_total">
+                                <span>Total Perkiraan</span>
+                                <strong id="rendi_cart_total_value">Rp 0</strong>
+                            </div>
+                            <a href="pemesanan.html" class="rendi_cart_checkout" id="rendi_cart_checkout">Lanjutkan Pemesanan ↗</a>
+                            <p>Jumlah dan produk bisa diubah kembali sebelum mengirim pesanan melalui WhatsApp.</p>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="rendi_footer">
+        <div class="rendi_container rendi_footer_content">
+
+            <a href="index.html" class="rendi_logo">
+                HEGAR<span> RAMONA.</span>
+            </a>
+
+            <p>
+                Aneka camilan dan kue pilihan untuk setiap momen.
+            </p>
+
+            <span>© 2026 Hegar Ramona. All Rights Reserved.</span>
+
+        </div>
+    </footer>
+
+
+    <script src="js/produk.js"></script>
+    <script src="js/rendi_script.js"></script>
+
+</body>
+</html>

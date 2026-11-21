@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan | Hegar Ramona</title>
+
+    <link rel="stylesheet" href="css/rendi_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="rendi_header">
+        <div class="rendi_container rendi_navbar">
+            <a href="index.html" class="rendi_logo">
+                HEGAR<span> RAMONA.</span>
+            </a>
+
+            <nav class="rendi_menu">
+                <a href="index.html">Beranda</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="promo.html">Promo &amp; Paket</a>
+                <a href="pemesanan.html" class="rendi_active">Cara Pemesanan</a>
+                <a href="testimoni.html">Testimoni</a>
+                <a href="kontak.html">Hubungi Kami</a>
+            </nav>
+
+            <a href="katalog.html" class="rendi_nav_button">Lihat Katalog ↗</a>
+        </div>
+    </header>
+
+    <!-- JUDUL HALAMAN -->
+    <section class="rendi_order_hero">
+        <div class="rendi_container">
+            <p class="rendi_eyebrow">PESANAN HEGAR RAMONA</p>
+            <h1>Pesan Produk <span>Favoritmu.</span></h1>
+            <p>
+                Isi informasi pesanan dengan lengkap.
+                Kami akan membantu proses pemesananmu melalui WhatsApp.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section class="rendi_order_section">
+        <div class="rendi_container rendi_order_layout">
+
+            <div class="rendi_order_information">
+                <p class="rendi_eyebrow">INFORMASI PEMESANAN</p>
+                <h2>Satu langkah lebih dekat dengan camilan favoritmu.</h2>
+                <p>
+                    Lengkapi data diri dan produk yang ingin dipesan.
+                    Pastikan jumlah pesanan dan informasi kontak sudah benar.
+                </p>
+
+                <div class="rendi_order_note">
+                    <strong>Perlu diperhatikan</strong>
+                    <p>
+                        Ketersediaan produk dapat berubah. Pesanan akan
+                        dikonfirmasi kembali oleh pihak Hegar Ramona.
+                    </p>
+                </div>
+
+                <a href="promo.html" class="rendi_order_back">
+                    ← Kembali ke Promo &amp; Paket
+                </a>
+            </div>
+
+            <div class="rendi_order_form_box">
+                <h2>Formulir Pemesanan</h2>
+                <p class="rendi_order_subtitle">
+                    Lengkapi formulir berikut untuk melanjutkan pesanan.
+                </p>
+
+                <form id="rendi_order_form">
+
+                    <div class="rendi_form_group">
+                        <label for="rendi_nama_pemesan">Nama Pemesan</label>
+                        <input
+                            type="text"
+                            id="rendi_nama_pemesan"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+                    <div class="rendi_form_group">
+                        <label for="rendi_nomor_pemesan">Nomor WhatsApp</label>
+                        <input
+                            type="tel"
+                            id="rendi_nomor_pemesan"
+                            placeholder="Contoh: 08xxxxxxxxxx"
+                            required
+                        >
+                    </div>
+
+                    <div class="rendi_order_cart_header">
+                        <div>
+                            <label>Produk yang Dipesan</label>
+                            <p>Paket pilihan atau produk yang kamu pilih akan tampil di sini.</p>
+                        </div>
+                        <a href="katalog.html" class="rendi_add_product_button">+ Tambah Produk</a>
+                    </div>
+
+                    <div id="rendi_order_items" class="rendi_order_items"></div>
+
+                    <div id="rendi_order_empty" class="rendi_order_empty" hidden>
+                        <strong>Belum ada produk.</strong>
+                        <p>Silakan pilih produk dari katalog terlebih dahulu.</p>
+                        <a href="katalog.html" class="rendi_add_product_button">Pilih Produk</a>
+                    </div>
+
+                    <div class="rendi_order_grand_total">
+                        <span>Total Perkiraan</span>
+                        <strong id="rendi_order_grand_total_value">Rp 0</strong>
+                    </div>
+
+                    <div class="rendi_form_group">
+                        <label for="rendi_catatan_pesanan">Catatan Pesanan</label>
+                        <textarea
+                            id="rendi_catatan_pesanan"
+                            rows="4"
+                            placeholder="Contoh: permintaan khusus atau informasi tambahan (opsional)"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="rendi_order_submit" id="rendi_order_submit">
+                        Lanjutkan ke WhatsApp ↗
+                    </button>
+
+                    <p class="rendi_order_disclaimer">
+                        Dengan melanjutkan, data pesanan akan dikirim
+                        melalui WhatsApp untuk proses konfirmasi.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="rendi_footer">
+        <div class="rendi_container rendi_footer_content">
+            <a href="index.html" class="rendi_logo">HEGAR<span> RAMONA.</span></a>
+            <p>Aneka camilan dan kue pilihan untuk setiap momen.</p>
+            <span>© 2026 Hegar Ramona. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="js/produk.js"></script>
+    <script src="js/pemesanan.js"></script>
+</body>
+</html>

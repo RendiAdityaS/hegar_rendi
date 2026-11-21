@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promo &amp; Paket | Hegar Ramona</title>
+
+    <link rel="stylesheet" href="css/rendi_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="rendi_header">
+    <div class="rendi_container rendi_navbar">
+        <a href="index.html" class="rendi_logo">HEGAR<span> RAMONA.</span></a>
+
+        <nav class="rendi_menu">
+            <a href="index.html">Beranda</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="promo.html" class="rendi_active">Promo &amp; Paket</a>
+            <a href="pemesanan.html">Cara Pemesanan</a>
+            <a href="testimoni.html">Testimoni</a>
+            <a href="kontak.html">Hubungi Kami</a>
+        </nav>
+
+        <a href="katalog.html" class="rendi_nav_button">Lihat Katalog ↗</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="rendi_promo_hero">
+        <div class="rendi_container rendi_promo_hero_inner">
+            <div class="rendi_promo_hero_copy">
+                <span class="rendi_eyebrow"> PROMO &amp; PAKET HEGAR RAMONA</span>
+                <h1>Pilihan Favorit dalam <span>Satu Paket.</span></h1>
+                <p>
+                    Temukan kombinasi produk yang dirancang untuk menemani waktu santai,
+                    berbagi bersama keluarga, hingga momen spesial.
+                </p>
+                <div class="rendi_promo_hero_actions">
+                    <a href="#rendi_promo_paket" class="rendi_button_primary">Lihat Paket ↗</a>
+                    <a href="katalog.html" class="rendi_button_secondary">Jelajahi Katalog</a>
+                </div>
+            </div>
+
+            <div class="rendi_promo_hero_visual">
+                <div class="rendi_promo_hero_card">
+                    <span>PAKET PILIHAN</span>
+                    <strong>Lebih mudah memilih,<br>lebih seru untuk berbagi.</strong>
+                    <small>4 paket rekomendasi</small>
+                </div>
+                <img src="images/promo-utama.jpg" alt="Aneka kue dan camilan Hegar Ramona">
+            </div>
+        </div>
+    </section>
+
+    <section class="rendi_promo_intro">
+        <div class="rendi_container rendi_promo_intro_grid">
+            <div>
+                <span class="rendi_eyebrow">KENAPA PAKET?</span>
+                <h2>Pilih Kombinasi yang <span>Sudah Kami Rekomendasikan.</span></h2>
+            </div>
+            <p>
+                Halaman ini untuk membantu kalian para pelanggan melihat beberapa kombinasi produk
+                dan promo menarik. Setiap paket berisi produk yang sudah tersedia di katalog.
+            </p>
+        </div>
+    </section>
+
+    <section class="rendi_promo_section" id="rendi_promo_paket">
+        <div class="rendi_container">
+            <div class="rendi_section_heading rendi_section_heading_split">
+                <div>
+                    <span class="rendi_eyebrow">PILIHAN PAKET</span>
+                    <h2>Temukan Paket <span>Favoritmu.</span></h2>
+                </div>
+            </div>
+
+            <div class="rendi_promo_filter" role="tablist" aria-label="Filter paket">
+                <button type="button" class="rendi_promo_filter_active" data-promo-filter="semua">Semua</button>
+                <button type="button" data-promo-filter="santai">Teman Santai</button>
+                <button type="button" data-promo-filter="keluarga">Keluarga</button>
+                <button type="button" data-promo-filter="acara">Acara &amp; Hadiah</button>
+            </div>
+
+            <div class="rendi_promo_grid">
+                <article class="rendi_promo_card" data-promo-kategori="santai" data-promo-title="Paket Ngemil Santai" data-promo-items="Astor Mini|Basreng Pedas" data-promo-price="Rp 95.000" data-promo-save="Hemat Rp 7.000 dari total produk Rp 102.000">
+                    <div class="rendi_promo_image">
+                        <img src="images/promo-paket-1.jpg" alt="Paket camilan untuk waktu santai" loading="lazy">
+                        <span>HEMAT</span>
+                    </div>
+                    <div class="rendi_promo_info">
+                        <span class="rendi_promo_label">TEMAN SANTAI</span>
+                        <h3>Paket Ngemil Santai</h3>
+                        <p>Perpaduan camilan untuk menemani waktu santai dan ngobrol bersama.</p>
+                        <div class="rendi_promo_meta"><strong>Rp 95.000</strong><span>2 produk</span></div>
+                        <button type="button" class="rendi_promo_detail" data-promo-open> Lihat Isi Paket ↗ </button>
+                    </div>
+                </article>
+
+                <article class="rendi_promo_card" data-promo-kategori="keluarga" data-promo-title="Paket Kue Kering" data-promo-items="Almond Chesse|Kue Semprit" data-promo-price="Rp 110.000" data-promo-save="Hemat Rp 10.000 dari total produk Rp 120.000">
+                    <div class="rendi_promo_image">
+                        <img src="images/promo-paket-2.jpg" alt="Paket kue kering dalam kemasan" loading="lazy">
+                        <span>FAVORIT</span>
+                    </div>
+                    <div class="rendi_promo_info">
+                        <span class="rendi_promo_label">KELUARGA</span>
+                        <h3>Paket Kue Kering</h3>
+                        <p>Perpaduan kue kering untuk disajikan saat berkumpul bersama keluarga.</p>
+                        <div class="rendi_promo_meta"><strong>Rp 110.000</strong><span>2 produk</span></div>
+                        <button type="button" class="rendi_promo_detail" data-promo-open> Lihat Isi Paket ↗ </button>
+                    </div>
+                </article>
+
+                <article class="rendi_promo_card" data-promo-kategori="keluarga" data-promo-title="Paket Bolu Keluarga" data-promo-items="Bolu Pisang|Bolu Keju|Bolu Tape" data-promo-price="Rp 85.000" data-promo-save="Hemat Rp 9.000 dari total produk Rp 94.000">
+                    <div class="rendi_promo_image">
+                        <img src="images/promo-paket-3.jpg" alt="Paket aneka bolu untuk keluarga" loading="lazy">
+                        <span>Hemat</span>
+                    </div>
+                    <div class="rendi_promo_info">
+                        <span class="rendi_promo_label">KELUARGA</span>
+                        <h3>Paket Bolu Keluarga</h3>
+                        <p>Beberapa pilihan bolu untuk menemani waktu minum dan momen bersama.</p>
+                        <div class="rendi_promo_meta"><strong>Rp 85.000</strong><span>3 produk</span></div>
+                        <button type="button" class="rendi_promo_detail" data-promo-open> Lihat Isi Paket ↗ </button>
+                    </div>
+                </article>
+
+                <article class="rendi_promo_card" data-promo-kategori="acara" data-promo-title="Paket Campur Favorit" data-promo-items="Astor Mini|Nutella Cookies|Bolu Pisang" data-promo-price="Rp 130.000" data-promo-save="Hemat Rp 15.000 dari total produk Rp 145.000">
+                    <div class="rendi_promo_image">
+                        <img src="images/promo-paket-4.jpg" alt="Paket camilan dan kue untuk acara" loading="lazy">
+                        <span>PILIHAN</span>
+                    </div>
+                    <div class="rendi_promo_info">
+                        <span class="rendi_promo_label">ACARA &amp; HADIAH</span>
+                        <h3>Paket Campur Favorit</h3>
+                        <p>Kombinasi camilan, cookies, dan bolu untuk melengkapi momen spesial.</p>
+                        <div class="rendi_promo_meta"><strong>Rp 130.000</strong><span>3 produk</span></div>
+                        <button type="button" class="rendi_promo_detail" data-promo-open> Lihat Isi Paket ↗ </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="rendi_promo_empty" hidden>
+                <strong>Paket belum tersedia.</strong>
+                <p>Coba pilih kategori paket lainnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rendi_promo_benefit">
+        <div class="rendi_container">
+            <div class="rendi_section_heading">
+                <span class="rendi_eyebrow">LEBIH PRAKTIS</span>
+                <h2>Mulai dari Paket, <span>Lanjutkan Sesukamu.</span></h2>
+                
+            </div>
+
+            <div class="rendi_promo_benefit_grid">
+                <article><span>01</span><div><h3>Lihat Isi Paket</h3><p>Kenali kombinasi produk dan harga paket sebelum memilih.</p></div></article>
+                <article><span>02</span><div><h3>Pilih Paket</h3><p>Tentukan paket yang paling sesuai dengan kebutuhanmu.</p></div></article>
+                <article><span>03</span><div><h3>Pesan Sekarang</h3><p>Klik tombol pesan dan paket langsung masuk ke halaman pemesanan.</p></div></article>
+                <article><span>04</span><div><h3>Konfirmasi via WhatsApp</h3><p>Lengkapi data pesanan lalu lanjutkan konfirmasi melalui WhatsApp.</p></div></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="rendi_promo_cta">
+        <div class="rendi_container rendi_promo_cta_inner">
+            <div>
+                <span class="rendi_eyebrow">MAU PILIH SENDIRI?</span>
+                <h2>Jelajahi Semua Produk.</h2>
+                <p>Kalau ingin menyusun pesanan sendiri, kamu tetap bisa melihat seluruh produk melalui katalog.</p>
+            </div>
+            <a href="katalog.html" class="rendi_button_primary">Buka Katalog ↗</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="rendi_footer">
+    <div class="rendi_container rendi_footer_content">
+        <a href="index.html" class="rendi_logo">HEGAR<span> RAMONA.</span></a>
+        <p>Aneka camilan dan kue pilihan untuk setiap momen.</p>
+        <span>© 2026 Hegar Ramona. All Rights Reserved.</span>
+    </div>
+</footer>
+
+<div class="rendi_promo_modal" id="rendi_promo_modal" aria-hidden="true">
+    <div class="rendi_promo_modal_overlay" data-promo-close></div>
+    <div class="rendi_promo_modal_box" role="dialog" aria-modal="true" aria-labelledby="rendi_promo_modal_title">
+        <button type="button" class="rendi_promo_modal_close" data-promo-close aria-label="Tutup">&times;</button>
+        <span class="rendi_eyebrow">DETAIL PAKET</span>
+        <h2 id="rendi_promo_modal_title">Paket Pilihan</h2>
+        <p id="rendi_promo_modal_description">Kombinasi produk pilihan Hegar Ramona.</p>
+        <div class="rendi_promo_modal_price" id="rendi_promo_modal_price">Rp 0</div>
+        <div class="rendi_promo_modal_save" id="rendi_promo_modal_save"></div>
+        <h3>Isi Paket</h3>
+        <ul id="rendi_promo_modal_items"></ul>
+        <div class="rendi_promo_modal_actions">
+            <a href="pemesanan.html" class="rendi_button_primary" id="rendi_promo_order_link">Pesan Paket Ini ↗</a>
+            <button type="button" class="rendi_button_secondary" data-promo-close>Tutup</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/promo.js"></script>
+
+</body>
+</html>

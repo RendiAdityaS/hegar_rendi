@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Testimoni | Hegar Ramona</title>
+
+    <link rel="stylesheet" href="css/rendi_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="rendi_header">
+        <div class="rendi_container rendi_navbar">
+
+            <a href="index.html" class="rendi_logo">
+                HEGAR<span> RAMONA.</span>
+            </a>
+
+            <nav class="rendi_menu">
+                <a href="index.html">Beranda</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="promo.html">Promo &amp; Paket</a>
+                <a href="pemesanan.html">Cara Pemesanan</a>
+                <a href="testimoni.html" class="rendi_active">Testimoni</a>
+                <a href="kontak.html">Hubungi Kami</a>
+            </nav>
+
+            <a href="katalog.html" class="rendi_nav_button">
+                Lihat Katalog ↗
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO TESTIMONI -->
+    <section class="rendi_testimoni_hero">
+        <div class="rendi_container rendi_testimoni_hero_inner">
+
+            <div class="rendi_testimoni_hero_copy">
+                <p class="rendi_eyebrow">CERITA DARI PELANGGAN</p>
+
+                <h1>
+                    Kesan Mereka
+                    <span>Tentang Hegar Ramona.</span>
+                </h1>
+
+                <p>
+                    Lihat berbagai kesan pelanggan setelah menemukan produk,
+                    paket, dan pengalaman pemesanan melalui Hegar Ramona.
+                </p>
+            </div>
+
+            <div class="rendi_testimoni_rating">
+                <span class="rendi_testimoni_rating_number">4.9</span>
+                <div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p>Penilaian simulasi project</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FILTER + TESTIMONI -->
+    <section class="rendi_testimoni_section">
+        <div class="rendi_container">
+
+            <div class="rendi_section_heading rendi_testimoni_heading">
+                <p class="rendi_eyebrow">PENGALAMAN PELANGGAN</p>
+                <h2>
+                    Pilihan Cerita yang
+                    <span>Beragam.</span>
+                </h2>
+                <p>
+                    Gunakan filter untuk melihat testimoni berdasarkan jenis
+                    produk atau pengalaman yang diceritakan.
+                </p>
+            </div>
+
+            <div class="rendi_testimoni_filters" role="group" aria-label="Filter testimoni">
+                <button type="button" class="rendi_testimoni_filter rendi_testimoni_filter_active" data-filter="semua">Semua</button>
+                <button type="button" class="rendi_testimoni_filter" data-filter="camilan">Camilan</button>
+                <button type="button" class="rendi_testimoni_filter" data-filter="kue">Kue</button>
+                <button type="button" class="rendi_testimoni_filter" data-filter="paket">Paket</button>
+            </div>
+
+            <div class="rendi_testimoni_grid" id="rendi_testimoni_grid">
+
+                <article class="rendi_testimoni_card" data-category="camilan">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Camilan</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Pilihan camilannya banyak dan informasi produk di website
+                        cukup jelas. Jadi lebih mudah menentukan produk yang ingin dipilih.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">R</div>
+                        <div>
+                            <strong>Rina</strong>
+                            <span>Pembeli Camilan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rendi_testimoni_card" data-category="kue">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Kue</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Saya suka karena detail produk dan harganya ditampilkan
+                        dengan rapi. Kue yang dicari jadi lebih cepat ditemukan.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">D</div>
+                        <div>
+                            <strong>Dimas</strong>
+                            <span>Pembeli Kue</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rendi_testimoni_card" data-category="paket">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Paket</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Adanya paket membuat pilihan jadi lebih praktis. Saya bisa
+                        langsung memilih paket tanpa harus mencari produk satu per satu.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">S</div>
+                        <div>
+                            <strong>Salsa</strong>
+                            <span>Pembeli Paket</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rendi_testimoni_card" data-category="camilan">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Camilan</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Tampilan katalog terasa sederhana dan tidak membingungkan.
+                        Fitur keranjang juga membantu saat ingin memilih beberapa produk.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">A</div>
+                        <div>
+                            <strong>Andi</strong>
+                            <span>Pembeli Camilan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rendi_testimoni_card" data-category="kue">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Kue</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Saya bisa melihat pilihan bolu dan kue dalam satu tempat,
+                        lalu lanjut ke pemesanan tanpa perlu berpindah-pindah terlalu banyak.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">N</div>
+                        <div>
+                            <strong>Nadia</strong>
+                            <span>Pembeli Kue</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rendi_testimoni_card" data-category="paket">
+                    <div class="rendi_testimoni_card_top">
+                        <span class="rendi_testimoni_quote">“</span>
+                        <span class="rendi_testimoni_category">Paket</span>
+                    </div>
+                    <div class="rendi_testimoni_stars">★★★★★</div>
+                    <p class="rendi_testimoni_text">
+                        Paket favorit terasa cocok untuk kebutuhan acara karena
+                        isinya sudah disusun sehingga tidak perlu menentukan semuanya dari awal.
+                    </p>
+                    <div class="rendi_testimoni_person">
+                        <div class="rendi_testimoni_avatar">F</div>
+                        <div>
+                            <strong>Fajar</strong>
+                            <span>Pembeli Paket</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="rendi_testimoni_note">
+                *Testimoni pada halaman ini merupakan konten simulasi untuk kebutuhan project website.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FORM BERIKAN TESTIMONI -->
+    <section class="rendi_testimoni_form_section">
+        <div class="rendi_container">
+
+            <div class="rendi_testimoni_form_intro">
+                <div>
+                    <p class="rendi_eyebrow">BAGIKAN PENGALAMANMU</p>
+                    <h2>
+                        Kasih Rating dan
+                        <span>Testimoni.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Setelah mencoba produk atau melakukan pemesanan, pelanggan
+                    dapat memberikan penilaian dan membagikan pengalamannya melalui form berikut.
+                </p>
+            </div>
+
+            <form class="rendi_testimoni_form" id="rendi_testimoni_form">
+
+                <div class="rendi_testimoni_form_grid">
+
+                    <div class="rendi_testimoni_field">
+                        <label for="rendi_testimoni_nama">Nama</label>
+                        <input
+                            type="text"
+                            id="rendi_testimoni_nama"
+                            name="nama"
+                            placeholder="Masukkan nama kamu"
+                            required
+                            maxlength="40"
+                        >
+                    </div>
+
+                    <div class="rendi_testimoni_field">
+                        <label for="rendi_testimoni_kategori">Kategori</label>
+                        <select id="rendi_testimoni_kategori" name="kategori" required>
+                            <option value="" selected disabled>Pilih kategori</option>
+                            <option value="camilan">Camilan</option>
+                            <option value="kue">Kue</option>
+                            <option value="paket">Paket</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="rendi_testimoni_field rendi_testimoni_rating_field">
+                    <span class="rendi_testimoni_form_label">Rating</span>
+
+                    <div class="rendi_testimoni_star_input" role="radiogroup" aria-label="Pilih rating">
+                        <input type="radio" id="rendi_rating_5" name="rating" value="5" required>
+                        <label for="rendi_rating_5" title="5 bintang">★</label>
+
+                        <input type="radio" id="rendi_rating_4" name="rating" value="4">
+                        <label for="rendi_rating_4" title="4 bintang">★</label>
+
+                        <input type="radio" id="rendi_rating_3" name="rating" value="3">
+                        <label for="rendi_rating_3" title="3 bintang">★</label>
+
+                        <input type="radio" id="rendi_rating_2" name="rating" value="2">
+                        <label for="rendi_rating_2" title="2 bintang">★</label>
+
+                        <input type="radio" id="rendi_rating_1" name="rating" value="1">
+                        <label for="rendi_rating_1" title="1 bintang">★</label>
+                    </div>
+
+                    <small id="rendi_testimoni_rating_text">
+                        Pilih jumlah bintang untuk memberikan penilaian.
+                    </small>
+                </div>
+
+                <div class="rendi_testimoni_field">
+                    <label for="rendi_testimoni_pesan">Testimoni</label>
+                    <textarea
+                        id="rendi_testimoni_pesan"
+                        name="pesan"
+                        rows="5"
+                        placeholder="Ceritakan pengalaman kamu..."
+                        required
+                        maxlength="300"
+                    ></textarea>
+                </div>
+
+                <div class="rendi_testimoni_form_bottom">
+                    <p>
+                        *Form ini merupakan fitur simulasi untuk kebutuhan project.
+                        Data yang dikirim disimpan pada browser yang digunakan.
+                    </p>
+
+                    <button type="submit" class="rendi_button_primary">
+                        Kirim Testimoni ↗
+                    </button>
+                </div>
+
+                <div
+                    class="rendi_testimoni_form_message"
+                    id="rendi_testimoni_form_message"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- CARA MEMBERIKAN KESAN -->
+    <section class="rendi_testimoni_process">
+        <div class="rendi_container">
+
+            <div class="rendi_section_heading">
+                <p class="rendi_eyebrow">SETELAH PEMESANAN</p>
+                <h2>
+                    Pengalaman yang
+                    <span>Mudah Dibagikan.</span>
+                </h2>
+                <p>
+                    Setelah menemukan produk yang sesuai, pelanggan dapat
+                    melanjutkan pemesanan dan memberikan kesan terhadap pengalaman mereka.
+                </p>
+            </div>
+
+            <div class="rendi_testimoni_process_grid">
+                <article>
+                    <span>01</span>
+                    <h3>Pilih Produk</h3>
+                    <p>Temukan produk atau paket yang sesuai melalui katalog dan halaman promo.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Siapkan Pesanan</h3>
+                    <p>Masukkan pilihan ke keranjang atau langsung pesan paket yang diinginkan.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Bagikan Kesan</h3>
+                    <p>Setelah pengalaman pemesanan, pelanggan dapat memberikan masukan atau kesan.</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="rendi_testimoni_cta">
+        <div class="rendi_container rendi_testimoni_cta_inner">
+            <div>
+                <p class="rendi_eyebrow">HEGAR RAMONA</p>
+                <h2>Sudah Menemukan Pilihanmu?</h2>
+                <p>
+                    Jelajahi katalog dan temukan camilan atau kue yang sesuai
+                    untuk menemani momenmu.
+                </p>
+            </div>
+
+            <a href="katalog.html" class="rendi_button_primary">
+                Jelajahi Katalog ↗
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="rendi_footer">
+        <div class="rendi_container rendi_footer_content">
+
+            <a href="index.html" class="rendi_logo">
+                HEGAR<span> RAMONA.</span>
+            </a>
+
+            <p>
+                Aneka camilan dan kue pilihan untuk setiap momen.
+            </p>
+
+            <span>© 2026 Hegar Ramona. All Rights Reserved.</span>
+
+        </div>
+    </footer>
+
+
+    <script src="js/testimoni.js"></script>
+
+</body>
+</html>
