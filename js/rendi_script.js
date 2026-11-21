@@ -293,13 +293,3 @@ document.addEventListener("keydown", (event) => {
 // Render awal
 rendi_tampilkan_produk();
 rendi_render_cart();
-
-// Hamburger Menu
-const hamburger = document.querySelector(".rendi_hamburger");
-const menu = document.querySelector(".rendi_menu");
-
-if (hamburger && menu) {
-    hamburger.addEventListener("click", () => {
-        menu.classList.toggle("active");
-    });
-}
